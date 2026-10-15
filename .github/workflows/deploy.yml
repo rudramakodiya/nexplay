@@ -1,12 +1,8 @@
-```yaml
 name: Test Workflow
-
-on:
-  workflow_dispatch:
-
+'on':
+workflow_dispatch:
 jobs:
-  test:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "NEXPLAY workflow works!"
-```
+test:
+runs-on: ubuntu-latest
+steps:
+- run: echo "NEXPLAY works"
