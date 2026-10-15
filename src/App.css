@@ -899,3 +899,30 @@ button {
     padding: 1.5rem;
   }
 }
+/* NEXPLAY ARCADE - centered layout fix */
+
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+}
+
+.nav-inner,
+.directory-section,
+.about-section,
+.footer-inner {
+width: calc(100% - 32px);
+max-width: 1080px;
+margin-left: auto;
+margin-right: auto;
+}
+
+.arcade-grid {
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+@media (max-width: 600px) {
+.arcade-grid {
+grid-template-columns: 1fr;
+}
+}
